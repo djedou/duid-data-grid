@@ -1,0 +1,17 @@
+[package]
+name = "excel_app_example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+duid-data-grid = { path = "../" }
+wasm-bindgen = "0.2"
+duid = { version = "0.2", git = "https://github.com/djedou/duid" , branch = "feat/dom_without_patches" }
+
+[profile.release]
+debug = true
+lto = true
