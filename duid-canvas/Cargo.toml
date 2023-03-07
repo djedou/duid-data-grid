@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 #duid = { version = "0.1", features = ["default"] }
 duid = { version = "0.2", git = "https://github.com/djedou/duid" , branch = "feat/dom_without_patches" }
+wasm-bindgen = "0.2"
